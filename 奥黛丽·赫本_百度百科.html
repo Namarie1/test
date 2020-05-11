@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>奥黛丽.赫本_百度百科</title>
+	<style type="text/css">
+		body,ul,li,input,h1,h2,h3,h4,h5,h6{
+			margin: 0;
+			padding: 0;
+		}
+		/* 导航栏1 */
+		.nav1-box{
+			height: 32px;
+			border-bottom: 1px solid #f0f0f0;/*底部边框设置*/
+		}
+		.nav1{
+			height: 33px;
+			width: 487px;
+			margin: 0 auto;/*设置对象上下间距为0 水平居中*/
+		}
+		.nav1 ul li{
+			width: 27px;
+			height: 32px;
+			list-style: none;/*设置列表项目样式为不使用项目符号*/
+			float: left;
+			padding: 0 10px;
+		}
+		.nav1 ul li a{
+			font:700 13px/32px microsoft yahei;
+			color: #000;
+		}
+		/* 左浮动 */
+		.fl{
+			float: left;
+		}
+		/* 右浮动 */
+		.fr{
+			float: right;
+		}
+		h3{/*设置小标题居中*/
+			text-align: center;
+			position: relative;
+		}
+		.box{
+			background: whitesmoke;
+			padding: 0;
+		}
+		.bg{
+			height: 20px;
+			background: whitesmoke;
+			margin-top: 0
+		}
+		.box-1{
+			width: 80%;
+			background: #fff;
+			margin-left:auto;/*左边距自动设置*/
+			margin-right:auto;/*右边距自动设置*/
+			border: 1px solid #ddd;
+			margin-bottom: 30px;
+			padding: 0 30px;
+		}
+		.on-nav{
+			height: 104px;
+			width: 815px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.logo{/*图标设置*/
+			height: 104px;
+			width: 155px;
+			position: absolute;
+			left: -5px;
+			bottom: 0px;
+		}
+		.logo img{/*图标图片设置*/
+			width: 150px;
+			height: 104px;
+		}
+		/*搜索框设置*/
+		.jz-input{
+			width: 440px;
+			height: 104px;
+			bottom: 30px;
+			position: absolute;
+			left: 145px;
+			top:29px;
+		}
+		.jz-in{
+			height: 40px;
+			width: 104px;
+			font-size: 16px;
+			background-color: #990000;
+			position: absolute;
+			top: 29px;
+			left: 572px;
+			border: 2px solid #4791ff;
+		}
+		.jz-in a{
+			width: 104px;
+			display: inline-block;
+			font: 16px/40px microsoft yahei;
+			color: #fff;
+			text-decoration: none;/*无文本修饰*/
+			background: #4791ff;
+			text-align: center;
+		}
+		.jz-search{
+			height: 40px;
+			width: 104px;
+			border: 2px solid #4791ff;
+			position: absolute;
+			top: 29px;
+			left: 684px;
+		}
+		.jz-search a{
+			width: 104px;
+			display: inline-block;
+			font: 16px/40px microsoft yahei;
+			color: #4791ff;
+			text-decoration: none;
+			text-align: center;/*居中设置*/
+		}
+		.juzhong{/*设置居中*/
+			text-align: center;
+			position: relative;
+			height: 50px;
+		}
+		.button{
+			color: #fff;
+			background: #38f;
+			border: 1px solid #38f;
+			border-bottom: 1px solid #2d78f4;
+		}
+		button{
+			font-size: 20px;
+		}
+		input{
+			font-size: 16px;
+			width: 423px;
+			height: 40px;
+			line-height: 40px;
+			border-color: #4791ff;
+		}
+		.a{
+			font-size: 20px;
+		}
+		select{
+			font-size: 15px;
+			color: royalblue;
+		}
+		p{/*段落的相关设置*/
+			text-indent:2em;
+			/*text-align: center;*/
+		}
+		img{/*图片设置*/
+			height: 348px;
+			width: 275px;
+		}
+		.boximg{/*图片盒子的相关设置*/
+			height: 348px;
+			width: 275px;
+			position: relative;
+		}
+		table{/*设置表格*/
+			border-collapse: collapse;
+			text-align: center;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.box3{/*段落使用盒子*/
+			width: 870px;
+			margin: 0 auto;
+			font: 12px/32px simsun;
+		}
+		.box3 li{
+			height: 32px;
+			width: 870px;
+			margin: 0 auto;
+			border-bottom:  1px solid #f1f1f1;
+		}
+		.box3 li a{
+			text-decoration: none;
+		}
+		.award{/*奖项标题*/
+			width: 900px;
+			height: 32px;
+			background: #f7f7f7;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #f6f6f6;
+			text-align: center;
+			font: 900 14px/32px simsun;
+			margin: 0 auto;
+		}
+		.award1{/*奖项标题*/
+			width: 940px;
+			height: 32px;
+			background: #f7f7f7;
+			border-top: 2px solid #bbb;
+			border-bottom: 1px solid #f6f6f6;
+			text-align: center;
+			font: 900 14px/32px simsun;
+			margin: 0 auto;
+		}
+		a{
+			color: #38f;
+			text-decoration: none;
+		}
+		/*页底设置*/
+		.foot{
+			height: 100px;
+			background: #333;
+		}
+		.foot-con{
+			width: 980px;
+			height: 48px;
+			margin: 0 auto;
+		}
+		.foot-con dl{
+			width: 48px;
+			height: 48px;
+			float: left;
+			margin-top: 20px;
+			margin-right: 40px;
+		}
+		.b{/*超链接设置*/
+			font: 12px/24px 宋体;
+			color: #c0c0c0;
+		}
+		.img1{
+			height: 70px;
+			width: 135.06px
+		}
+		.box5{/*标题盒子*/
+			width: 100%;
+			height: 90px;
+		}
+		.boxplayer{/*视频播放盒子设置*/
+        	width: 100%;
+        	height: 300px;
+        	background: rgb(21,58,150);
+			text-align: center;
+			position: relative;
+			padding: 0;
+		}
+		.img2{
+			width: 100%;
+			height: 600px;
+		}
+		video{
+			height: 300px;
+		}
+		.nav2{
+			height: 45px;
+			background: #459df5;
+			border: 1px solid #5895d5;
+		}
+		.nav2-con{
+			height: 45px;
+			width: 980px;
+			margin: 0 auto;
+		}
+		.nav2-con ul li{
+			height: 45px;
+			list-style: none;
+			float: left;
+		}
+		.nav2-con ul li a{
+			display: inline-block;
+			height: 45px;
+			font: 16px/45px microsoft yahei;
+			color: #fff;
+			padding:0 20px;
+			text-decoration: none;
+		}
+		.nav2-con ul li a:hover{
+			background-color: #338de6;
+		}
+		.personal{/*个人中心设置*/
+			height: 45px;
+			width: 80px;
+			font: 16px/45px microsoft yahei;
+			color: #fff;
+			float: right;
+		}
+		.bocimg{/*图片盒子设置*/
+			width: 90%;
+			height: 450px;
+			margin: 0 auto;
+		}
+		.bocimg img{
+			width: 350px;
+			height: 400px;
+		}
+		table{/*表格设置*/
+			width: 850px;
+			height: 450px;
+		}
+		tr{
+			width: 800px;
+			height: 20px;
+			border-bottom: 1px dashed #e1e1e1;
+			font: 14px simsun;
+		}
+		/* h2标题 */
+		.headline{
+			height: 22px;
+			width: 100px;
+			border-left: 10px solid #4F9CEE;
+			padding-left: 20px;
+			margin: 20px 0;
+			font: 500 24px/22px SimHei;
+		}
+		p{
+			font: 14px microsoft yahei;
+			line-height: 30px;
+		}
+		/* 出演电视剧表格样式 */
+		.table-style{
+			width: 870px;
+			height: 350px;
+			border: 1px solid #e4e4e4;
+			margin: 10px auto 20px ;
+		}
+		.table-style tr{
+			border: 1px solid #e4e4e4;
+		}
+		.table-style a{
+			text-decoration: none;
+		}
+		.trstyle{
+			background: #f7f7f7;
+		}
+		/* 话剧作品 */
+		.table-style2{
+			width: 870px;
+			height: 150px;
+			border: 1px solid #e4e4e4;
+			margin: 10px auto 20px;	
+		}
+		.table-style2 tr{
+			border: 1px solid #e4e4e4;
+		}
+		.table-style2 a{
+			text-decoration: none;
+		}
+		.img3{/*作品照片设置*/
+			height: 250px;	
+		}
+		.imgright{/*页面右图片设置*/
+			float: right;
+			width: 280px;
+			height: 350px;
+		}
+		.imgright1{/*页面右小图片设置*/
+			float: right;
+			width: 300px;
+			height: 250px;
+		}
+		.img4{/*秒懂百科图片设置*/
+			text-align: center;
+			width: 250px;
+			height: 100px;
+		}
+		.boxplayer a img{
+			width: 140px;
+			height: 55px;
+			position: absolute;
+			bottom: 125px;
+			left: 250px;
+		}
+		.boxplayer img{
+			width: 90px;
+			height: 70px;
+			position: absolute;
+			bottom: 150px;
+			right: 420px;
+		}
+		/*参演电视剧盒子设置*/
+		.video{
+			width: 870px;
+			height: 140px;
+			margin: 0 auto;
+		}
+		.video li{
+			list-style: none;
+		}
+		.video .v-top{
+			height: 97px;
+			width: 850px;
+		}
+		.video .v-top .video-style{
+			height: 98px;
+			width: 300px;
+		}
+		.border{
+			height: 97px;
+			width: 850px;
+			border: 1px solid #eee;
+			margin: 20px auto;	
+			padding: 10px 10px;
+		}
+		.cover{
+			width: 80px;
+			height: 98px;
+		}
+		.ll{
+			float: left;
+		}
+		.lr{
+			height: 98px;
+			width: 210px;
+			float: right;
+		}
+		.lr ul li{
+			height: 24px;
+			width: 260px;
+			font: 600 13px/24px simsun;
+			color: #888;
+		}
+		.lr ul li span{
+			font: 900 16px/24px microsoft yahei;
+			color: blue;
+			color: rgb(19,110,194);
+		}
+		form{
+			border: 1px solid #fff;
+		}
+		.movie{/*视频播放设置*/
+			width: 400px;
+			height: 225px;
+			background: url("http://n.sinaimg.cn/sinakd20200405ac/233/w640h393/20200405/da96-irtymmw1238932.jpg ")  500px 300px ;
+			position: absolute;
+			left: 500px;
+			top: 42px;
+		}
+		.movie video{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		/*标题下信息盒子设置*/
+		.brief{
+			width: 273px;
+			height: 20px;
+			background: #eef7fd;
+			padding-left: 20px;
+			padding-top:5px ;
+			border-left: 6px solid #52a3f5;
+			margin-top: 10px;
+		}
+		.brief ul{
+			width: 273px;
+			height: 14px;
+		}
+		.brief ul li{
+			height: 14px;
+			padding-left: 8px;
+			list-style: none;
+			float: left;
+			font: 14px/14px microsoft yahei;
+			border-left: 1px solid #eee;
+		}  
+	</style>
+</head>
+<body>
+	<div class="nav1-box">
+		<div class="nav1">
+			<ul>
+				<li><a href="#">网页</a></li>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">贴吧</a></li>
+				<li><a href="#">知道</a></li>
+				<li><a href="#">音乐</a></li>
+				<li><a href="#">图片</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">地图</a></li>
+				<li><a href="#">文库</a></li>
+				<li><a href="#">百科</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="on-nav">
+		<div class="logo fl">
+			<a href="https://baike.baidu.com/" target="_blank" class="a"><img src = "https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=233830867,2616991809&fm=111&gp=0.jpg" alt = "" title = "百度百科" class="img1"></a>
+		</div>
+		<div class="jz-input fl">
+			<input name="word" type="text" value="奥黛丽·赫本">
+		</div>
+		<div class="jz-in fr">
+			<a href="#">进入词条</a>
+		</div>
+		<div class="jz-search fr">
+			<a href="#">全站搜索</a>
+		</div>
+		<!-- </form> -->
+	</div>
+	<div class="nav2">
+		<div class="nav2-con">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">分类</a></li>
+				<li><a href="#">秒懂百科</a></li>
+				<li><a href="#">特色百科</a></li>
+				<li><a href="#">用户</a></li>
+				<li><a href="#">权威</a></li>
+			</ul>
+			<div class="personal">个人中心</div>
+		</div>
+	</div>
+	<div class="boxplayer">
+		<a href="https://baike.baidu.com/" target="_blank" class="a"><img src = "https://baikebcs.bdimg.com/front-end/second-know/img/logo.png" alt = "" title = "秒懂百科" class="img4" ></a>
+		<img  src="https://bkssl.bdimg.com/static/wiki-lemma/widget/lemma_content/configModule/secondsKnowLarge/img/sub-slogen_cef21db.svg" alt="">
+		<div class="movie">
+		<video id="sl-player-el-video" playsinline="" tabindex="-1" src="https://vdept.bdstatic.com/39754766374e714a42424a656a335269/36586a4d574c6354/59945a2abababf20d7e43fe9174818a78c643b8672a3ad907a1f770679d6d6d952a230b392f19ec5321af904bb845aa6.mp4?auth_key=1589199364-0-0-68d9cc41faccf3ad77981e201a8c1e18" controls=""></video>
+		</div>
+	</div>
+    <br />
+    <div class="box">
+    	<div class="bg"></div>
+    	<div class="box-1">
+    		<img src = "https://bkimg.cdn.bcebos.com/pic/6f061d950a7b02089e6c25376cd9f2d3562cc8bb?x-bce-process=image/resize,m_lfit,w_500,h_500,limit_1" alt = "" title = "奥黛丽·赫本" class="imgright">
+	    	<h1>奥黛丽·赫本</h1>
+	    	<div class="brief">
+	    		<ul>
+	    			<li>1929年5月4日</li>
+	    			<li>比利时布鲁塞尔</li>
+	    			<li>英国</li>
+	    		</ul>
+	    	</div>
+			<p class="box3">&nbsp奥黛丽·赫本（Audrey Hepburn，1929年5月4日—1993年1月20日），出生于比利时<a href="https://baike.baidu.com/item/%E5%B8%83%E9%B2%81%E5%A1%9E%E5%B0%94/927298" target="_blank">布鲁塞尔</a>，英国女演员。<br />&nbsp&nbsp&nbsp1948年，出演了银幕处女作《<a href="https://baike.baidu.com/item/%E8%8D%B7%E5%85%B0%E4%B8%83%E8%AF%BE" target="_blank">荷兰七课</a>》。1952年，主演了音乐剧《<a href="https://baike.baidu.com/item/%E9%87%91%E7%B2%89%E4%B8%96%E7%95%8C/18583937" target="_blank">金粉世界</a>》，凭借该剧获得了<a href="https://baike.baidu.com/item/%E6%89%98%E5%B0%BC%E5%A5%96/1397196" target="_blank">托尼奖</a>最佳女主角奖   。1953年9月2日，主演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》上映，凭借该片获得了<a href="https://baike.baidu.com/item/%E7%AC%AC26%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212830" target="_blank">第26届奥斯卡金像奖</a>最佳女主角奖 。1954年9月9日，主演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E9%85%8D/14628" target="_blank">龙凤配</a>》上映，由此获得了<a href="https://baike.baidu.com/item/%E7%AC%AC27%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212852" target="_blank">第27届奥斯卡金像奖</a>最佳女主角奖提名。1959年6月18日，主演的剧情片《<a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>》上映，凭借该片获得了<a href="https://baike.baidu.com/item/%E7%AC%AC32%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8153687" target="_blank">第32届奥斯卡金像奖</a>最佳女主角提名。1961年10月5日，主演的喜剧电影《<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>》上映，凭借该片获得了第34届奥斯卡金像奖最佳女主角提名。1963年12月5日，出演的悬疑电影《<a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>》上映，由此获得了第18届英国电影学院奖电影奖-最佳英国女演员奖 。1967年10月26日，出演的惊悚电影《<a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a>》上映，凭借该片获得了第40届奥斯卡金像奖最佳女主角提名。<br />&nbsp&nbsp&nbsp&nbsp1975年，出演了爱情冒险电影《<a href="https://baike.baidu.com/item/%E7%BD%97%E5%AE%BE%E6%B1%89%E4%B8%8E%E7%8E%9B%E8%8E%89%E5%AE%89/7108001" target="_blank">罗宾汉与玛莉安</a>》。1980年8月14日，出演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E5%93%84%E5%A0%82%E5%A4%A7%E7%AC%91/10063637" target="_blank">哄堂大笑</a>》上映。1987年2月23日，出演的电视电影《<a href="https://baike.baidu.com/item/%E7%AA%83%E8%B4%BC%E4%B9%8B%E7%88%B1" target="_blank">窃贼之爱</a>》上映。1989年12月22日，客串出演的奇幻爱情电影《<a href="https://baike.baidu.com/item/%E7%9B%B4%E5%88%B0%E6%B0%B8%E8%BF%9C/2446" target="_blank">直到永远</a>》上映。1993年，出演的纪录片《世界花园和奥黛丽·赫本》播出。<br />&nbsp&nbsp&nbsp&nbsp
+			1993年1月20日，奥黛丽·赫本因结肠癌在瑞士洛桑病逝，享年63岁；同年，获得了<a href="https://baike.baidu.com/item/%E7%AC%AC65%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8093210" target="_blank">第65届奥斯卡金像奖</a>吉恩·赫肖尔特人道主义奖。1999年，被美国电影学会评为“百年来最伟大的女演员”第3名。</p>
+		</div>
+		<div class="box-1">
+			<div class="headline">词条图片</div>
+			<div class="bocimg">
+			<img src = "https://bkimg.cdn.bcebos.com/pic/d0c8a786c9177f3e6d577bea70cf3bc79e3d56f1?x-bce-process=image/resize,m_lfit,w_235,h_235,limit_1" alt = "" title = "奥黛丽·赫本" >
+			<img src = "https://bkimg.cdn.bcebos.com/pic/902397dda144ad34691a9d51dea20cf430ad85ba?x-bce-process=image/resize,m_lfit,w_500,h_500,limit_1" alt = "" title = "奥黛丽·赫本">
+			<img src = "https://bkimg.cdn.bcebos.com/pic/b21bb051f8198618d2bafcd848ed2e738ad4e6e9?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt = "" title = "奥黛丽·赫本">
+			</div>
+		</div>
+		<div class="box-1">
+			<h2><div class="headline">基本信息</div></h2>
+			<table border="0" cellspacing="0">
+				<tr>
+					<td>中文名</td>
+					<td>奥黛丽·赫本</td>
+				</tr>
+				<tr>
+					<td>外文名</td>
+					<td>Audrey Hepburn</td>
+				</tr>
+				<tr>
+					<td>别名</td>
+					<td>Audrey Kathleen Hepburn-Ruston</td>
+				</tr>
+				<tr>
+					<td>国籍</td>
+					<td>英国</td>
+				</tr>
+				<tr>
+					<td>民族</td>
+					<td>比利时、荷兰、英国、爱尔兰混血</td>
+				</tr>
+				<tr>
+					<td>星座</td>
+					<td>金牛座</td>
+				</tr>
+				<tr>
+					<td>血型</td>
+					<td>A型</td>
+				</tr>
+				<tr>
+					<td>身高</td>
+					<td>170cm</td>
+				</tr>
+				<tr>
+					<td>出生地</td>
+					<td>比利时布鲁塞尔</td>
+				</tr>
+				<tr>
+					<td>出生日期</td>
+					<td>1929年5月4日</td>
+				</tr>
+				<tr>
+					<td>逝世日期</td>
+					<td>1993年1月20日</td>
+				</tr>
+				<tr>
+					<td>职业</td>
+					<td>演员</td>
+				</tr>
+				<tr>
+					<td>毕业院校</td>
+					<td>玛莉·蓝伯特芭蕾舞学校</td>
+				</tr>
+				<tr>
+					<td>代表作品</td>
+					<td><a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>，<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>，<a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank">窈窕淑女</a>，<a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E9%85%8D/14628" target="_blank">龙凤配</a>，<a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>，<a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>，<a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a>，<a href="https://baike.baidu.com/item/%E7%94%9C%E5%A7%90%E5%84%BF/79387" target="_blank">甜姐儿</a></td>
+				</tr>
+				<tr>
+					<td>主要成就</td>
+					<td>
+						<form>
+		        			<select>
+		            			<option value="<a href="https://baike.baidu.com/item/%E7%AC%AC26%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212830" target="_blank">第26届奥斯卡金像奖</a>最佳女主角奖" selected="selected"><a href="https://baike.baidu.com/item/%E7%AC%AC26%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212830" target="_blank">第26届奥斯卡金像奖</a>最佳女主角奖</option>
+		            			<option value="<a href="https://baike.baidu.com/item/%E7%AC%AC27%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212852" target="_blank">第27届奥斯卡金像奖</a>最佳女主角奖提名"><a href="https://baike.baidu.com/item/%E7%AC%AC27%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212852" target="_blank">第27届奥斯卡金像奖</a>最佳女主角奖提名</option>
+		            			<option value="<a href="https://baike.baidu.com/item/%E7%AC%AC32%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8153687" target="_blank">第32届奥斯卡金像奖</a>最佳女主角提名"><a href="https://baike.baidu.com/item/%E7%AC%AC32%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8153687" target="_blank">第32届奥斯卡金像奖</a>最佳女主角提名</option>
+		            			<option value="第34届奥斯卡金像奖最佳女主角提名">第34届奥斯卡金像奖最佳女主角提名</option>
+		            			<option value="第18届英国电影学院奖电影奖-最佳英国女演员奖">第18届英国电影学院奖电影奖-最佳英国女演员奖</option>
+		            			<option value="第40届奥斯卡金像奖最佳女主角提名">第40届奥斯卡金像奖最佳女主角提名</option>
+		            			<option value="<a href="https://baike.baidu.com/item/%E7%AC%AC65%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8093210" target="_blank">第65届奥斯卡金像奖</a>吉恩·赫肖尔特人道主义奖"><a href="https://baike.baidu.com/item/%E7%AC%AC65%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8093210" target="_blank">第65届奥斯卡金像奖</a>吉恩·赫肖尔特人道主义奖</option>
+		            			<option value="第7届圣塞巴斯蒂安国际电影节最佳女演员奖">第7届圣塞巴斯蒂安国际电影节最佳女演员奖</option>
+		            </select>
+		        </form>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="box-1">
+			<div class="headline">早年经历</div>
+			<img src = "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3183207397,537231061&fm=26&gp=0.jpg" alt = "" title = "美丽的奥黛丽·赫本" class="imgright1">
+			<p class="box3">&nbsp&nbsp1929年5月4日，奥黛丽·赫本出生于比利时布鲁塞尔市东南伊克塞勒区基耶维街48号的一个贵族后裔家庭，全名是奥黛丽·凯瑟琳·拉斯顿，1935年5月，奥黛丽·赫本的父亲抛下了她和母亲离家出走；同年，她进入英国肯特郡埃尔海姆乡的贵族寄宿学校“密斯利登学校”学习，并于1938年毕业。1939年9月，欧战爆发，赫本跟随母亲回到荷兰。<br />&nbsp&nbsp&nbsp&nbsp1939年，奥黛丽·赫本进入荷兰安恒音乐学院（Arnhem Conservatory）学习芭蕾舞。1940年，宣称中立的荷兰被纳粹德国占领。为了避免奥黛丽·赫本原本非常英国味道的名字招惹麻烦，她母亲窜改了自己的身分文件，替她制造了一个荷兰假名艾妲·凡·辛斯特拉（Edda van Heemstra），但是这个名字从来未被合法正式登记过。<br />&nbsp&nbsp&nbsp&nbsp当纳粹侵占安恒后，由于谣传赫本母亲的家族带有犹太血统，原本十分富裕的男爵家族被视为第三帝国的敌人，不但财产被占领军没收，奥黛丽·赫本的舅舅更被处决，赫本母女俩被迫过着贫困的生活：数年间，因为食物匮乏，赫本只能经常以郁金香球根为食物，并靠喝大量的水填饱肚子。长期的营养不良促成她日后瘦削的身材。虽然如此，奥黛丽·赫本仍然不断锻炼她最爱的芭蕾舞，即使穷到要穿上最难挨的木制舞鞋也没有关系。二战中后期，赫本通过芭蕾舞的表演为荷兰游击队秘密的募捐。同时由于年龄较小，她利用孩童的身份多次为荷兰地下党传递情报。<br />&nbsp&nbsp&nbsp&nbsp1948年战后，奥黛丽·赫本与母亲带着省吃节用存下来的100英镑去到英国伦敦。她在那里一边打工一边寻找深造机会；同年进入玛莉·蓝伯特芭蕾舞学校（Marie Rambert`s）学习芭蕾舞。经过数月训练后，由于年龄和身高以及早年因营养不良而影响发育的原因，她被告知不适合当芭蕾舞者。为了解决家庭经济压力，她转而兼职模特，并且参与歌舞团的演出。</p>
+		</div>
+		<div class="box-1">
+			<div class="headline">演艺经历</div>
+			<img src = "https://bkimg.cdn.bcebos.com/pic/a08b87d6277f9e2ff2f408541d30e924b999f3ad?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt = "" title = "电影《甜姐儿》宣传照" class="imgright">
+			<p class="box3">&nbsp&nbsp1948年，正在上学的奥黛丽·赫本因为没钱缴交学费而返回荷兰，出演了纪录短片《荷兰七课》，她在片中扮演用英语和荷兰语向观众讲解的空姐，该片为其银幕处女作；同年，赫本击败众多应征者，成为音乐剧《高跟鞋》（High Button Shoes）的合唱团员，这是她第一次以舞者身份出演歌舞剧。<br />&nbsp&nbsp&nbsp&nbsp1949年，奥黛丽·赫本参与了音乐剧《鞑靼酱》（Sauce Tartare）的演出，她在剧中饰演了瑜伽学生、女店员、古典芭蕾舞者等多个角色。1950年，出演了歌舞剧《开胃酱》（Sauce Piquante），奥黛丽·赫本在剧中有了独舞的戏份。<br />&nbsp&nbsp&nbsp&nbsp1951年，奥黛丽·赫本首次于英国电影《<a href="https://baike.baidu.com/item/%E5%A4%A9%E5%A0%82%E9%87%8C%E7%9A%84%E7%AC%91%E5%A3%B0/9590593" target="_blank">天堂里的笑声</a>》中露脸，饰演一位甜美性感的卖烟女孩，由此正式成为一名电影演员；5月16日，出演的喜剧电影《野燕麦》上映，她在片中扮演一位打扮时髦夸张的电话接线员；6月26日，参演的犯罪喜剧片《<a href="https://baike.baidu.com/item/%E6%8B%89%E5%87%A1%E5%BE%B7%E5%B1%B1%E7%9A%84%E6%9A%B4%E5%BE%92/6656290" target="_blank">拉凡德山的暴徒</a>》上映。<br />&nbsp&nbsp&nbsp&nbsp1952年2月5日，主演的犯罪电影《<a href="https://baike.baidu.com/item/%E5%8F%8C%E5%A7%9D%E8%89%B3" target="_blank">双姝艳</a>》上映；随后，奥黛丽·赫本接演了喜剧电影《蒙特卡洛宝贝》，为了拍摄该片，她到法国拍摄外景，期间意外被看中成为音乐剧《<a href="https://baike.baidu.com/item/%E9%87%91%E7%B2%89%E4%B8%96%E7%95%8C/18583937" target="_blank">金粉世界</a>》的女主角，该剧在美国百老汇连演了219场，奥黛丽·赫本因在剧中的表演获得了<a href="https://baike.baidu.com/item/%E6%89%98%E5%B0%BC%E5%A5%96/1397196" target="_blank">托尼奖</a>最佳女主角奖；同时，她还被《<a href="https://baike.baidu.com/item/%E5%8F%8C%E5%A7%9D%E8%89%B3" target="_blank">双姝艳</a>》的导演推荐给威廉·惠勒，参加了其电影《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》的演员试镜，获得非常好的赞誉，从而得到这部电影的女主角角色。<br />&nbsp&nbsp&nbsp&nbsp1953年9月2日，与格利高里·派克领衔主演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》上映，她在片中饰演短暂逃出皇室，享受平民自由的“安娜公主”，这是奥黛丽·赫本首次在电影中出演女主角，她凭借该片获得了<a href="https://baike.baidu.com/item/%E7%AC%AC26%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212830" target="_blank">第26届奥斯卡金像奖</a>最佳女主角奖；同年，她主演了舞台剧《翁蒂娜》，凭借该剧再次获得了<a href="https://baike.baidu.com/item/%E6%89%98%E5%B0%BC%E5%A5%96/1397196" target="_blank">托尼奖</a>最佳女主角奖。<br />&nbsp&nbsp&nbsp&nbsp1954年9月9日，与亨弗莱·鲍嘉、威廉·霍尔登共同主演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E9%85%8D/14628" target="_blank">龙凤配</a>》上映，奥黛丽·赫本在片中饰演天真烂漫，不谙世事的“萨布里娜”，凭借该角色获得了获得了<a href="https://baike.baidu.com/item/%E7%AC%AC27%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8212852" target="_blank">第27届奥斯卡金像奖</a>最佳女主角奖提名。<br />&nbsp&nbsp&nbsp&nbsp1956年8月21日，搭档亨利·方达主演的爱情战争电影《<a href="https://baike.baidu.com/item/%E6%88%98%E4%BA%89%E4%B8%8E%E5%92%8C%E5%B9%B3/9134454" target="_blank">战争与和平</a>》上映，奥黛丽·赫本在片中扮演罗斯托夫伯爵的女儿“娜塔莎”。<br />&nbsp&nbsp&nbsp&nbsp1957年2月4日，与梅尔·弗尔领衔主演的音乐歌舞片《<a href="https://baike.baidu.com/item/%E9%AD%82%E6%96%AD%E6%A2%85%E8%80%B6%E6%9E%97" target="_blank">魂断梅耶林</a>》上映；2月13日，与弗雷德·阿斯泰尔、凯·汤普森等人联合出演的爱情歌舞片《<a href="https://baike.baidu.com/item/%E7%94%9C%E5%A7%90%E5%84%BF/79387" target="_blank">甜姐儿</a>》上映，奥黛丽·赫本饰演由于被时装摄影师看上并加以培养而成为世界名模的“乔·斯托克顿”；6月30日，与加里·库珀领衔主演的爱情喜剧片《黄昏之恋》上映，她在片中扮演对爱情有着无限期望和憧憬的怀春少女“艾莲·查维斯”。<br />&nbsp&nbsp&nbsp&nbsp1959年3月19日，与安东尼·博金斯、李·科布合作出演的爱情电影《<a href="https://baike.baidu.com/item/%E7%BF%A0%E8%B0%B7%E9%A6%99%E9%AD%82/7147725" target="_blank">翠谷香魂</a>》上映；6月18日，领衔主演的剧情片《<a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>》上映，奥黛丽·赫本凭借该片获得了<a href="https://baike.baidu.com/item/%E7%AC%AC32%E5%B1%8A%E5%A5%A5%E6%96%AF%E5%8D%A1%E9%87%91%E5%83%8F%E5%A5%96/8153687" target="_blank">第32届奥斯卡金像奖</a>最佳女主角提名。<br />&nbsp&nbsp&nbsp&nbsp1960年4月6日，与伯特·兰卡斯特、奥迪·墨菲一同出演的西部电影《<a href="https://baike.baidu.com/item/%E6%81%A9%E6%80%A8%E6%83%85%E5%A4%A9/15834118" target="_blank">恩怨情天</a>》上映，奥黛丽·赫本在片中扮演被白人收养的印第安女孩“瑞秋·扎卡里”。<br />&nbsp&nbsp&nbsp&nbsp1961年10月5日，与乔治·佩帕德、帕德里夏·妮尔等共同主演的喜剧电影《<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>》上映，奥黛丽·赫本在片中饰演流连于上层社会、渴望钓到金龟婿的应召女郎“霍莉·格莱特利”，凭借该角色获得了第34届奥斯卡金像奖最佳女主角提名；12月19日，与雪莉·麦克雷恩领衔主演的爱情电影《双姝怨》上映。<br />&nbsp&nbsp&nbsp&nbsp1963年12月5日，与加里·格兰特、沃尔特·马修联袂出演的悬疑电影《<a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>》上映，奥黛丽·赫本饰演在丈夫遇害后陷入巨大谜局的“瑞金娜·兰伯特”，由此获得了第18届英国电影和电视艺术学院奖电影奖-最佳英国女演员奖。<br />&nbsp&nbsp&nbsp&nbsp1964年3月1日，搭档威廉·霍尔登出演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E5%B7%B4%E9%BB%8E%E5%81%87%E6%9C%9F/3753683" target="_blank">巴黎假期</a>》上映；12月25日，与雷克斯·哈里森、杰瑞米·布雷特等联合主演的歌舞片《<a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank">窈窕淑女</a>》上映，奥黛丽·赫本在片中饰演家境贫寒，但却聪明伶俐的卖花女“伊莱莎·杜尔利特”。<br />&nbsp&nbsp&nbsp&nbsp1966年7月13日，与彼德·奥图领衔主演的爱情犯罪电影《<a href="https://baike.baidu.com/item/%E5%81%B7%E9%BE%99%E8%BD%AC%E5%87%A4/12093168" target="_blank">偷龙转凤</a>》上映，她在片中饰演美丽漂亮、聪明智慧的“妮可·邦内特”。<br />&nbsp&nbsp&nbsp&nbsp1967年4月27日，与阿尔伯特·芬尼共同主演的爱情喜剧片《丽人行》上映；10月26日，与艾伦·阿金、理查德·克里纳联袂出演的惊悚电影《<a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a>》上映，奥黛丽·赫本扮演独自与毒贩周旋的盲女“苏茜”，凭借该角色获得了第40届奥斯卡金像奖最佳女主角提名；同年，奥黛丽·赫本宣布息影。<br />&nbsp&nbsp&nbsp&nbsp1975年，息影8年的奥黛丽·赫本复出，与肖恩·康纳利合作，出演了爱情冒险电影《<a href="https://baike.baidu.com/item/%E7%BD%97%E5%AE%BE%E6%B1%89%E4%B8%8E%E7%8E%9B%E8%8E%89%E5%AE%89/7108001" target="_blank">罗宾汉与玛莉安</a>》。1979年6月29日，领衔主演的悬疑电影《<a href="https://baike.baidu.com/item/%E8%A1%80%E7%BB%9F/10063897" target="_blank">血统</a>》上映，奥黛丽·赫本在片中饰演在父亲意外身亡后，继承父业并追查父亲死因的“伊丽莎白·洛芙夫”。<br />&nbsp&nbsp&nbsp&nbsp1980年8月14日，与本·戈扎那、约翰·雷特尔等共同出演的爱情喜剧片《<a href="https://baike.baidu.com/item/%E5%93%84%E5%A0%82%E5%A4%A7%E7%AC%91/10063637" target="_blank">哄堂大笑</a>》上映。1987年2月23日，友情出演的电视电影《<a href="https://baike.baidu.com/item/%E7%AA%83%E8%B4%BC%E4%B9%8B%E7%88%B1" target="_blank">窃贼之爱</a>》上映。<br />&nbsp&nbsp&nbsp&nbsp1989年12月22日，客串出演的奇幻爱情电影《<a href="https://baike.baidu.com/item/%E7%9B%B4%E5%88%B0%E6%B0%B8%E8%BF%9C/2446" target="_blank">直到永远</a>》上映，奥黛丽·赫本在片中饰演雍容高贵的美丽天使“哈普”，该片是其出演的最后一部电影作品。<br />&nbsp&nbsp&nbsp&nbsp1993年，纪录片《世界花园和奥黛丽·赫本》播出，奥黛丽·赫本在片中担任解说员，介绍世界各地花园，这是她最后一次在荧幕上出现。</p>
+		</div>
+		<div class="box-1">
+			<div class="headline">个人生活</div>
+			<h3>家庭</h3>
+			<p class="box3">&nbsp&nbsp奥黛丽·赫本的外公叫阿纳德·凡·赫姆斯特拉，是荷兰王室直系贵族后裔，其家族可以追溯到16世纪早期。他拥有男爵爵位，是一位律师，在阿纳姆司法部担任副检察长和助理法官，同时担任该市第一位市长，还担任过荷属圭那亚殖民地，南美苏里南的总督。<br />&nbsp&nbsp&nbsp&nbsp奥黛丽·赫本的母亲名为艾拉·凡·赫姆斯特拉，1900年出生于荷兰，有男爵爵位，拥有荷兰、法国及匈牙利的<a href="https://baike.baidu.com/item/%E8%A1%80%E7%BB%9F/10063897" target="_blank">血统</a>。她的第一次婚姻嫁给了荷兰贵族，生下了两个儿子伊恩和亚历山大。第二次婚姻对象即赫本生父，名为约瑟夫·维克多·安东尼·赫本·拉斯顿，他有苏格兰、爱尔兰和奥地利<a href="https://baike.baidu.com/item/%E8%A1%80%E7%BB%9F/10063897" target="_blank">血统</a>，是英格兰银行布鲁塞尔分行总经理。两人于1926年9月7日在印度尼西亚雅加达结婚。但因赫本之父倾向纳粹甚至信仰法西斯主义，两人于1935年5月分手。成名后的赫本曾专程去看望孤身一人的父亲，但不欢而散，父亲表示不愿再次相见。赫本母亲晚年与赫本同住在和平之邸，受到悉心照料，于1984年8月26日逝世。</p>
+			<h3>宠物</h3>
+			<img src = "https://bkimg.cdn.bcebos.com/pic/b21bb051f8198618d2bafcd848ed2e738ad4e6e9?x-bce-process=image/resize,m_lfit,w_220,h_220,limit_1" alt = "" title = "赫本和小狗" class="imgright">
+			<p class="box3">&nbsp&nbsp1956年，梅尔·费勒送给奥黛丽·赫本一条约克夏犬，赫本为它取名“出名”。不管是朋友聚会还是拍摄电影，赫本都尽可能的将其带在身边。“出名”还多次出现在摄影师为赫本拍摄的照片中，并在电影《<a href="https://baike.baidu.com/item/%E7%94%9C%E5%A7%90%E5%84%BF/79387" target="_blank">甜姐儿</a>》中出镜。1960年，“出名”因卡车车祸死于《<a href="https://baike.baidu.com/item/%E6%81%A9%E6%80%A8%E6%83%85%E5%A4%A9/15834118" target="_blank">恩怨情天</a>》好莱坞片场，这让赫本备受打击。奥黛丽·赫本养的第二条约克夏犬叫“山姆”，外形酷似“出名”，是“出名”死后梅尔·费勒所送。<br />&nbsp&nbsp&nbsp&nbsp1959年，奥黛丽·赫本出演梅尔·费勒执导的《<a href="https://baike.baidu.com/item/%E7%BF%A0%E8%B0%B7%E9%A6%99%E9%AD%82/7147725" target="_blank">翠谷香魂</a>》时收养了一只梅花鹿，取名依比。依比被收养时还没有断奶，赫本亲自为其喂奶。依比长大后和赫本形影不离，同居一室，还在赫本印制的私家圣诞贺卡上，并常跟随赫本走街入市。<br />&nbsp&nbsp&nbsp&nbsp奥黛丽·赫本晚年时，还养了五只杰克罗素梗犬，分别命名为Missy、Tuppy、Penny、Piceri、Jackie，送给罗伯特·沃德斯当作50岁的生日礼物。</p>
+			<h3>感情经历</h3>
+			<p class="box3">&nbsp&nbsp奥黛丽·赫本的第一次恋爱发生在21岁时，对象是29岁的詹姆斯·汉森。1952年《<a href="https://baike.baidu.com/item/%E9%87%91%E7%B2%89%E4%B8%96%E7%95%8C/18583937" target="_blank">金粉世界</a>》首演四场后，赫本和汉森宣布将在巡演结束后结婚。期间《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》上映大获成功。演艺事业的腾飞致使两人聚少离多，加之赫本母亲的坚持反对，在《<a href="https://baike.baidu.com/item/%E9%87%91%E7%B2%89%E4%B8%96%E7%95%8C/18583937" target="_blank">金粉世界</a>》的芝加哥首演式上，赫本宣布与未婚夫汉森解除婚约。<br />&nbsp&nbsp&nbsp&nbsp1953年8月20日，在《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》首映式结束后的晚会上，格利高里·派克将自己的朋友，演员兼剧作家梅尔·费勒介绍给了奥黛丽·赫本，两人一见钟情。1954年9月24日，赫本与费勒在瑞士卢采恩湖畔的一个小教堂举行了婚礼，婚后赫本因身体太弱曾两次流产。1960年7月17日，生下儿子西恩·赫本·费勒。但因两人的事业发展差距日益明显，婚姻开始出现裂痕。1967年9月1日，赫本与费勒宣布离婚。<br />&nbsp&nbsp&nbsp&nbsp1968年，奥黛丽·赫本出游希腊途中与安德烈·多蒂邂逅，多蒂在与赫本熟悉后迅速展开攻势，深陷在婚姻失败痛苦中的赫本被多蒂的热情和关怀打动。1969年1月18日，赫本和多蒂在意大利举行了婚礼。1970年2月8日，赫本诞下次子卢卡·多蒂。为维系家庭赫本息影专心扮演妻母角色，但多蒂常年流连花丛热衷夜场。1981年，赫本与多蒂的婚姻关系宣告结束<br />&nbsp&nbsp&nbsp&nbsp1980年冬，奥黛丽·赫本与演员罗伯特·沃德斯相识于朋友的书房。对婚姻感到失望的赫本与刚经历丧妻之痛的罗伯特互相找到了心灵的慰藉。不久，罗伯特·沃德斯搬进和平之邸（赫本于1965年在瑞士托洛肯纳兹购下的18世纪农庄）与赫本同住。此后的十余年两人相濡以沫，虽未结婚，但赫本却称罗伯特为灵魂伴侣。</p>
+		</div>
+		<div class="box-1">
+			<div class="headline">主要作品</div>
+			<h3>参演电影</h3>
+			<table border="1" cellspacing="0" class="table-style">
+				<tr class="trstyle">
+					<th>电影名</th>
+					<th>饰演</th>
+					<th>导演</th>
+					<th>日期</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%9B%B4%E5%88%B0%E6%B0%B8%E8%BF%9C/2446" target="_blank"><a href="https://baike.baidu.com/item/%E7%9B%B4%E5%88%B0%E6%B0%B8%E8%BF%9C/2446" target="_blank">直到永远</a></a>
+					</td>
+					<td>Hap</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E5%8F%B2%E8%92%82%E6%96%87%C2%B7%E6%96%AF%E7%9A%AE%E5%B0%94%E4%BC%AF%E6%A0%BC/26768" target="_blank">史蒂文·斯皮尔伯格</a>
+					</td>
+					<td>1989-12-22</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%AA%83%E8%B4%BC%E4%B9%8B%E7%88%B1/8062192" target="_blank"><a href="https://baike.baidu.com/item/%E7%AA%83%E8%B4%BC%E4%B9%8B%E7%88%B1" target="_blank">窃贼之爱</a></a>
+					</td>
+					<td>Baroness Caroline DuLac</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E7%93%A6%E6%A0%BC%E7%BA%B3" target="_blank">罗伯特·瓦格纳</a>
+					</td>
+					<td>1987-02-23</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E5%93%84%E5%A0%82%E5%A4%A7%E7%AC%91/10063637" target="_blank"><a href="https://baike.baidu.com/item/%E5%93%84%E5%A0%82%E5%A4%A7%E7%AC%91/10063637" target="_blank">哄堂大笑</a></a>
+					</td>
+					<td>Angela Niotes</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E5%BD%BC%E5%BE%97%C2%B7%E5%8D%9A%E6%A0%BC%E8%BE%BE%E8%AF%BA%E7%BB%B4%E5%A5%87" target="_blank">彼得·博格达诺维奇</a>
+					</td>
+					<td>1981-08-14</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E8%A1%80%E7%BB%9F/10063897" target="_blank"><a href="https://baike.baidu.com/item/%E8%A1%80%E7%BB%9F/10063897" target="_blank">血统</a></a>
+					</td>
+					<td>Elizabeth Roffe</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%89%B9%E4%BC%A6%E6%96%AF%C2%B7%E6%9D%A8" target="_blank">特伦斯·杨</a>
+					</td>
+					<td>1979-06-29</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%BD%97%E5%AE%BE%E6%B1%89%E4%B8%8E%E7%8E%9B%E8%8E%89%E5%AE%89/7108001" target="_blank"><a href="https://baike.baidu.com/item/%E7%BD%97%E5%AE%BE%E6%B1%89%E4%B8%8E%E7%8E%9B%E8%8E%89%E5%AE%89/7108001" target="_blank">罗宾汉与玛莉安</a></a>
+					</td>
+					<td>Lady Marian</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E8%8E%B1%E6%96%AF%E7%89%B9" target="_blank">理查德·莱斯特</a>
+					</td>
+					<td>1976-03-11</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0/6191275" target="_blank"><a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a></a>
+					</td>
+					<td>Susy Hendrix</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%89%B9%E4%BC%A6%E6%96%AF%C2%B7%E6%9D%A8" target="_blank">特伦斯·杨</a>
+					</td>
+					<td>1967-10-26</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E4%B8%BD%E4%BA%BA%E8%A1%8C/3932517" target="_blank">丽人行</a>
+					</td>
+					<td>Joanna Wallace</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E6%96%AF%E5%9D%A6%E5%88%A9%C2%B7%E5%A4%9A%E5%8D%97" target="_blank">斯坦利·多南</a>
+					</td>
+					<td>1967-04-27</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E5%81%B7%E9%BE%99%E8%BD%AC%E5%87%A4/12093168" target="_blank"><a href="https://baike.baidu.com/item/%E5%81%B7%E9%BE%99%E8%BD%AC%E5%87%A4/12093168" target="_blank">偷龙转凤</a></a>
+					</td>
+					<td>Nicole Bonnet</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E5%A8%81%E5%BB%89%C2%B7%E6%83%A0%E5%8B%92" target="_blank">威廉·惠勒</a>
+					</td>
+					<td>1966-07-13</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank"><a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank">窈窕淑女</a></a>
+					</td>
+					<td>Eliza Doolittle</td>
+					<td>
+						<a href="https://baike.baidu.com/item/%E4%B9%94%E6%B2%BB%C2%B7%E5%BA%93%E5%85%8B" target="_blank">乔治·库克</a>
+					</td>
+					<td>1964-12-25</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://baike.baidu.com/item/%E5%B7%B4%E9%BB%8E%E5%81%87%E6%9C%9F/3753683" target="_blank"><a href="https://baike.baidu.com/item/%E5%B7%B4%E9%BB%8E%E5%81%87%E6%9C%9F/3753683" target="_blank">巴黎假期</a></a>
+					</td>
+					<td>Gabrielle Simpson/Gaby</td>
+					<td>
+						<a href="https://baike.baidu.com/item/Richard%20Quine" target="_blank">Richard Quine</a>
+					</td>
+					<td>1964-03-16</td>
+				</tr>
+			</table>
+			<h3>参演电视剧</h3>
+			<div class="video">
+				<ul>
+					<li class="v-top border">
+						<div class="video-style fl">
+							<div class="ll"><img src="http://image.uc.cn/s/wemedia/s/upload/2018/8402a0c76d424c181f2f28add66d67ee.jpg" alt="" class="cover"></div>
+							<div class="lr">
+								<ul>
+									<li><span>世界花园和奥黛丽·赫本 </span>1993</li>
+									<li>导演 Bruce Franchini</li>
+									<li>主演 <a href="https://baike.baidu.com/item/%E9%BA%A6%E5%85%8B%E5%B0%94%C2%B7%E7%BA%A6%E5%85%8B" target="_blank">麦克尔·约克</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="video-style fr">
+							<div class="ll"><img src="https://bkimg.cdn.bcebos.com/pic/4b90f603738da9775b2e2e7bb851f8198618e359?x-bce-process=image/crop,x_13,y_0,w_466,h_632/resize,m_lfit,h_436,limit_1/quality,q_70" alt="" class="cover"></div>
+							<div class="lr">
+								<ul>
+									<li><span>魂断梅耶林 </span>1957</li>
+									<li>导演 <a href="https://baike.baidu.com/item/%E6%9F%AF%E5%85%8B%C2%B7%E5%8B%83%E6%9C%97%E5%AE%81">柯克·勃朗宁</a> <a href="https://baike.baidu.com/item/%E5%AE%89%E7%BA%B3%E6%89%98%E5%B0%94%C2%B7%E6%9D%8E%E7%BB%B4%E5%85%8B">安纳托尔·李维克</a></li></li>
+									<li>主演 <a href="https://baike.baidu.com/item/%E6%A2%85%E5%B0%94%C2%B7%E8%B4%B9%E5%8B%92">梅尔·费勒</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<h3>话剧作品</h3>
+			<table border="1" cellspacing="0" class="table-style2">
+				<tr class="trstyle">
+					<th>年份</th>
+					<th>原名</th>
+					<th>译名</th>
+				</tr>
+				<tr>
+					<td>1954</td>
+					<td>Ondine</td>
+					<td>翁蒂娜</td>
+				</tr>
+				<tr>
+					<td>1951</td>
+					<td>Gigi</td>
+					<td><a href="https://baike.baidu.com/item/%E9%87%91%E7%B2%89%E4%B8%96%E7%95%8C/18583937" target="_blank">金粉世界</a></td>
+				</tr>
+				<tr>
+					<td>1950</td>
+					<td>Sauce Piquante</td>
+					<td>开胃酱</td>
+				</tr>
+				<tr>
+					<td>1949</td>
+					<td>Sauce Tartare</td>
+					<td>鞑靼酱</td>
+				</tr>
+				<tr>
+					<td>1949</td>
+					<td>High Button Shoes</td>
+					<td>高跟鞋</td>
+				</tr>
+			</table>
+		</div>
+		<div class="box-1">
+			<div class="headline">社会活动</div>
+			<p class="box3">1988年至1993年间，奥黛丽·赫本成为<a href="https://baike.baidu.com/item/%E8%81%94%E5%90%88%E5%9B%BD%E5%84%BF%E7%AB%A5%E5%9F%BA%E9%87%91%E4%BC%9A" target="_blank">联合国儿童基金会</a>亲善大使，帮助拉丁美洲和非洲的孩子们，足迹遍及埃塞俄比亚、苏丹、萨尔瓦多、危地马拉、洪都拉斯、委内瑞拉、厄瓜多尔、孟加拉等亚非拉国家，为孩子们呐喊、呼吁和募捐。<br />&nbsp&nbsp1992年底，奥黛丽·赫本以重病之躯赴索马里看望因饥饿而面临死亡的儿童，在当地展开考察并实行救援。</p>
+		</div>
+		<div class="box-1">
+			<div class="headline">获奖记录</div>
+			<div class="award1">奥斯卡金像奖</div>
+			<ul class="box3">
+				<li>1993    第65届    吉恩.赫肖尔特人道主义奖（获奖)</li>
+				<li>1968    第40届    最佳女主角    <a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a>    （提名)</li>
+				<li>1962    第34届    最佳女主角    <a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>    （提名）</li>
+				<li>1960    第32届    最佳女主角    <a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>    （提名）</li>
+				<li>1955    第27届    最佳女主角    <a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E9%85%8D/14628" target="_blank">龙凤配</a>    （提名）</li>
+				<li>1954    第26届    最佳女主角    <a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>    （获奖）</li>
+			</ul>
+			<div class="award">美国金球奖</div>
+			<ul class="box3">
+				<li>1990    第47届    塞西尔.B.戴米尔奖    （获奖）</li>
+				<li>1968    第25届    电影类-音乐喜剧类最佳女主角    罗马丽人行    （提名）</li>
+				<li>1968    第25届    电影类-剧情类最佳女主角    <a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a>    （提名）</li>
+				<li>1965    第22届    电影类-音乐喜剧类最佳女主角    <a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank">窈窕淑女</a>    （提名）</li>
+				<li>1964    第21届    电影类-音乐喜剧类最佳女主角    <a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>    （提名）</li>
+				<li>1962    第19届    电影类-音乐喜剧类最佳女主角    <a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>    （提名）</li>
+				<li>1960    第17届    电影类-剧情类最佳女主角    <a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>    （提名）</li>
+				<li>1958    第15届    电影类-音乐喜剧类最佳女主角    黄昏之恋    （提名）</li>
+				<li>1957    第14届    电影类-剧情类最佳女主角    <a href="https://baike.baidu.com/item/%E6%88%98%E4%BA%89%E4%B8%8E%E5%92%8C%E5%B9%B3/9134454" target="_blank">战争与和平</a>    （提名）</li>
+				<li>1955    第12届    最受欢迎女演员    （获奖）</li>
+				<li>1954    第11届    电影类-剧情类最佳女主角    <a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>    （获奖）</li>
+			</ul>
+			<div class="award">圣塞巴斯蒂安国际电影节</div>
+			<ul class="box3">
+				<li>1959    第7届圣塞巴斯蒂安国际电影节最佳女演员奖    <a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>    （获奖）</li>
+			</ul>
+			<div class="award">英国电影和电视艺术学院奖</div>
+			<ul class="box3">
+				<li>1965    第18届    电影奖-最佳英国女演员    <a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>    （获奖）</li>
+				<li>1960    第13届    电影奖-最佳英国女演员    <a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>    （获奖）</li>
+				<li>1957    第10届    电影奖-最佳英国女演员    <a href="https://baike.baidu.com/item/%E6%88%98%E4%BA%89%E4%B8%8E%E5%92%8C%E5%B9%B3/9134454" target="_blank">战争与和平</a>    （提名）</li>
+				<li>1955    第8届    电影奖-最佳英国女演员    <a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E9%85%8D/14628" target="_blank">龙凤配</a>    （提名）</li>
+				<li>1954    第7届    电影奖-最佳英国女演员    <a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>    （获奖）</li>
+			</ul>
+			<div class="award">意大利大卫奖</div>
+			<ul class="box3">
+				<li>1965    第9届    最佳外国女演员    <a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank">窈窕淑女</a>    （获奖）</li>
+				<li>1962    第6届    最佳外国女演员    <a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>    （获奖）</li>
+				<li>1960    第4届    最佳外国女演员    <a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>    （获奖）</li>
+			</ul>
+			<div class="award">艾美奖</div>
+			<ul class="box3">
+				<li>1993    第45届    杰出个人成就奖    世界花园    （获奖）</li>
+			</ul>
+			<div class="award"><a href="https://baike.baidu.com/item/%E6%89%98%E5%B0%BC%E5%A5%96/1397196" target="_blank">托尼奖</a></div>
+			<ul class="box3">
+				<li>1968    特别成就奖    （获奖）</li>
+				<li>1954    最佳女主角    翁蒂娜    （获奖）</li>
+				<li>1952    最佳女主角    <a href="https://baike.baidu.com/item/%E9%87%91%E7%B2%89%E4%B8%96%E7%95%8C/18583937" target="_blank">金粉世界</a>    （获奖）</li>
+			</ul>
+			<div class="award">格莱美奖</div>
+			<ul class="box3">
+				<li>1993    最佳儿童诵读专辑    奥黛丽·赫本的魔法童话    （获奖）</li>
+			</ul>
+			<div class="award">传媒评选类奖项</div>
+			<ul class="box3">
+				<li>2006    英国杂志《新女性》组织5000多名读者投票评选的“世界古今百大美女”第1名    （获奖）</li>
+				<li>2006    美国电影杂志《首映》评选的“银幕史上100位最伟大角色”第32名(《<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>》霍莉·戈莱特丽)    （获奖）</li>
+				<li>2005    美国《首映》评选的“好莱坞历史上最具影响力的50位电影明星”第18名(获选影片《<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>》)    （获奖）</li>
+				<li> 2004    时尚杂志《VOGUE》评选的“世界时尚名人”女性第1名(得票率29%)    （获奖）</li>
+				<li>2004    时尚杂志《Elle》评选的“世界最美丽女人”第1名(得票率为76%。)    （获奖）</li>
+				<li> 2003    英国BBC电视台观众投票评选的“世界100位最伟大电影明星”第13名    （获奖）</li>
+				<li>2003    美国VH1电视台举办评选的“美国200大文化偶像”第34名    （获奖）</li>
+				<li>2001    美国杂志《传记》组织2500多名读者投票评选的“史上最受欢迎女演员”第1名    （获奖）</li>
+				<li> 2000    美国杂志《娱乐周刊》评选的“影史最佳经典女演员”第2名(得票率20.6%)    （获奖）</li>
+				<li>1999    美国电影协会(AFI)为纪念好莱坞诞辰100周年评选的“好莱坞50位传奇巨星”第3名    （获奖）</li>
+				<li>1997    美国杂志《娱乐周刊》评选的“史上最伟大的100位电影明星”第21名    （获奖）</li>
+				<li>1997    英国杂志《帝国》评选的“史上100大银幕明星”第50名    （获奖） </li>
+				<li>1996    英国时尚杂志《哈泼斯与名媛》评选的“史上最有魅力女性”第1名    （获奖）</li>
+				<li>1995    英国杂志《帝国》评选的“银幕史上100大最性感明星”第8名    （获奖）</li>
+				<li>1990    美国杂志《人物》评选的“世界50大最美丽人物”之一    （获奖）</li>
+			</ul>
+		</div>
+		<div class="box-1">
+			<div class="headline">人物评价</div>
+			<p class="box3">&nbsp&nbsp奥黛丽·赫本是拥有着清澈的大眼睛、精致的小脸、修长身材的美女。以高雅的气质与有品位的穿着著称。在《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》中的演绎是赫本的一次本色表演，她自身所具有的纯真、优雅在安妮身上得到完美体现。当赫本顶着一头清新短发，身着简洁到极致的衣裙，拿着冰淇淋信步走下罗马广场台阶时，似乎古老的罗马也为之倾倒；而锦衣华服的赫本在外交舞会上迎来送往，翩然起舞时，没有人会怀疑她是真的公主；而在露天舞场与暗探周旋时的赫本，则将小鹿一样的轻灵活泼体现的淋漓尽致。在《<a href="https://baike.baidu.com/item/%E4%BF%AE%E5%A5%B3%E4%BC%A0" target="_blank">修女传</a>》中，赫本成功塑造了隐忍、善良的修女鲁克，完美展现她在信仰和真实情感之间的矛盾与挣扎。在《<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>》中，赫本成功塑造了在生活的残酷面前委曲求全却保持了纯洁心灵的女性形象，她在片中闲坐窗台轻弹吉他，用忧伤慵懒的声音吟唱《月亮河》的片段成为电影史上最令人难忘的场景之一。在《<a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>》中，赫本的喜剧天赋被成功挖掘，无论是含情脉脉的爱情场景还是笑料频出的喜剧片断，都处理的得心应手，精彩纷呈。赫本在影片中的多变造型与影片的背景巴黎相得益彰，给人以无限美的享受。在《<a href="https://baike.baidu.com/item/%E7%9B%B2%E5%A5%B3%E6%83%8A%E9%AD%82%E8%AE%B0" target="_blank">盲女惊魂记</a>》中，奥黛丽·赫本不仅活灵活现的演绎了真实可信的盲人，在激烈的戏剧冲突中同样表现的游刃有余，赫本大睁双眼满脸惊惶无助的神情给人以深刻印象。（央广网、公益时报网、新浪娱乐评）<br />&nbsp&nbsp&nbsp&nbsp在二十世纪，奥黛丽·赫本以激进的姿态和绝对的勇气，改变了世人所公认的美女定义。她的装扮在不失女性优雅的同时，与男孩子一样的中性化风格融为一体，她让女性变得洒脱利落，而不是只有柔弱、窈窕的身形。作为电影演员，赫本的电影作品体现出她的时尚品位，电影中她的造型都烙下“赫本风格”的时尚标签。《<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%81%87%E6%97%A5/30468" target="_blank">罗马假日</a>》中的清新短发，《莎宾娜》中的无袖纯白刺花长裙，《<a href="https://baike.baidu.com/item/%E8%92%82%E5%87%A1%E5%B0%BC%E7%9A%84%E6%97%A9%E9%A4%90/35740" target="_blank">蒂凡尼的早餐</a>》中的黑色鸡尾酒裙，《<a href="https://baike.baidu.com/item/%E8%B0%9C%E4%B8%AD%E8%B0%9C/10893861" target="_blank">谜中谜</a>》中经典的圆框太阳镜，《<a href="https://baike.baidu.com/item/%E7%AA%88%E7%AA%95%E6%B7%91%E5%A5%B3/9286604" target="_blank">窈窕淑女</a>》中精致的宽檐帽，都是时尚史上的经典元素，并深刻影响人们的审美理念。（时尚评论宋琛、时光网评）</p>
+		</div>
+		<div class="box-1">
+			<div class="headline">后世纪念</div>
+			<p class="box3">&nbsp&nbsp2002年5月，<a href="https://baike.baidu.com/item/%E8%81%94%E5%90%88%E5%9B%BD%E5%84%BF%E7%AB%A5%E5%9F%BA%E9%87%91%E4%BC%9A" target="_blank">联合国儿童基金会</a>在其纽约总部为一尊7英尺高的青铜雕像揭幕，雕像名字为“奥黛丽精神”，以表彰奥黛丽·赫本为联合国所做的贡献。<br />&nbsp&nbsp&nbsp&nbsp2003年6月11日，美国邮政总署发行“纪念奥黛丽·赫本逝世十周年”人物肖像纪念邮票。2008年1月20日，美国《生活》杂志举办了“纪念奥黛丽·赫本珍贵照片展”。<br />&nbsp&nbsp&nbsp&nbsp2019年5月4日，为了纪念奥黛丽·赫本诞辰90周年，比利时布鲁塞尔大区在市中心Espace Vanderborght博物馆举办了“探索赫本”（Intimate Audrey）主题展览。</p>
+		</div>
+		<div class="foot">
+			<div class="foot-con">
+				<dl>
+					<dt><a href="https://baike.baidu.com/" target="_blank" class="b">百科首页</a></dt>
+					<dt><a href="https://www.baidu.com/index.php?tn=78040160_5_pg&ch=2" target="_blank" class="b">返回首页</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="https://baike.baidu.com/" target="_blank" class="b">百科首页</a></dt>
+					<dt><a href="https://www.baidu.com/index.php?tn=78040160_5_pg&ch=2" target="_blank" class="b">返回首页</a></dt>
+				</dl>
+				<dl>
+					<dt><a href="https://baike.baidu.com/" target="_blank" class="b">百科首页</a></dt>
+					<dt><a href="https://www.baidu.com/index.php?tn=78040160_5_pg&ch=2" target="_blank" class="b">返回首页</a></dt>
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
